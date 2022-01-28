@@ -125,6 +125,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libwfdservice_shim.so'),
     "vendor/bin/mm-pp-dpps": blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    ('system_ext/lib64/lib-imscamera.so', 'system_ext/lib64/lib-imsvideocodec.so'): blob_fixup()
+        .add_needed('libgui_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
