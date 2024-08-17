@@ -160,11 +160,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@latest-service.clearkey
 
-# Encryption
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.keymaster@4.1.vendor
-
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
@@ -243,9 +238,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 PRODUCT_PACKAGES += \
     FM2 \
-    libqcomfm_jni \
-    qcom.fmradio \
-    qcom.fmradio.xml
+    qcom.fmradio
 endif
 
 PRODUCT_PACKAGES += \
@@ -429,8 +422,6 @@ PRODUCT_PACKAGES += \
     extphonelib_product.xml \
     ims-ext-common \
     ims_ext_common.xml \
-    librmnetctl \
-    libprotobuf-cpp-full \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-hidl-wrapper-prd \
@@ -481,11 +472,6 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/boot/boot-imag
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
-
-# Tin
-PRODUCT_PACKAGES += \
-    libtinyxml \
-    libxml2 
 
 # Thermal
 PRODUCT_PACKAGES += \
