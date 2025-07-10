@@ -247,8 +247,7 @@ PRODUCT_PACKAGES += \
     gnss_antenna_info.conf \
     gnss@2.0-base.policy \
     gnss@2.0-xtra-daemon.policy \
-    gnss@2.0-xtwifi-client.policy \
-    gnss@2.0-xtwifi-inet-agent.policy
+    gnss@2.0-xtwifi-client.policy
 
 # Healthd
 PRODUCT_PACKAGES += \
