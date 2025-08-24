@@ -453,7 +453,7 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so;MODULE_SUFFIX=_vendor|cfd777100
 # DRM (Widevine) - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine|c77129c2767ceaa55850455c0c80544defd09b5b
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|992f63e9700da29099e0590858a6becaaadb2976
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|c03636aaf4b8b3e5d2cf56704a4676b8f2920478
 vendor/lib/libcpion.so|c5e659d2bd0ab4c182f1a01047a7bcf95b268c7e
 vendor/lib/libmm-hdcpmgr.so|9703d954ada46e5fbeffc73aa318037f915e088c
 vendor/lib64/mediadrm/libwvdrmengine.so|b45c19f3f113b512f96de3e28a2519373f1da916
