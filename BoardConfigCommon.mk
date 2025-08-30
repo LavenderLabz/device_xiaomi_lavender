@@ -71,7 +71,6 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 # Display
 SOONG_CONFIG_qtidisplay_target_needs_raw10_buffer_fix := true
-TARGET_USES_ION := true
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
