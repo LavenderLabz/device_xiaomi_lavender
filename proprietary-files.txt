@@ -1,4 +1,4 @@
-# ADSP - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+# ADSP - from Zebra/helios/helios:14/14-32-12.00-UG-U00-STD-HEL-04/15:user/release-keys
 vendor/bin/adsprpcd|cff4409a0fd8788650c0aace2762abb041357e2a
 vendor/bin/loadalgo|1b921bf28fa22c6ad19c478d7df0159bc20e795c
 vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
@@ -9,7 +9,7 @@ vendor/lib/libadsprpc.so|ccb72c88c7e20d7aebebd9917f95e0bb1eef4b26
 vendor/lib/libfastcvadsp_stub.so|a662dc04efa8d3add8b7f0f7182c7c2bd389abeb
 vendor/lib/libfastcvopt.so|a427855a25216b6e55d6647ccc2c442f378e549d
 vendor/lib/libmdsprpc.so|5a38a2d023f3cccd30b37d9533125c98832b9571
-vendor/lib/libmmcamera_dbg.so|8fa153e1e49f2abfe6288a804a413cd3af01e665
+vendor/lib/libmmcamera_dbg.so|ec7772f347454cd35819eae1f0aa1f8c9073ed1b
 vendor/lib/libsdsprpc.so|492cee7cdb1a3e5d9cee4147759b198c9409da53
 vendor/lib64/libadsp_default_listener.so|93e1f400865f48514d5353e7b6dcaaf6b3cad2fc
 vendor/lib64/libadsprpc.so|b0503930aac6102e0242f0dc07ae089817f92352
@@ -17,7 +17,7 @@ vendor/lib64/libfastcvadsp_stub.so|cfcd3078ad1078f838d6b6e1aee89e44f4a5b41b
 vendor/lib64/libfastcvopt.so|a5f62c4d69493a9efc2a9d61c89d1d53c83061a5
 vendor/lib64/libloadalgo_stub.so|1d7008f428734d7c25b95d5fa29470e6775c17e3
 vendor/lib64/libmdsprpc.so|7c63c27e5549e02b1c5434fa114ab829bdee38e3
-vendor/lib64/libmmcamera_dbg.so|0ffd951e724b2d2979f4136660ce1e28e6b30118
+vendor/lib64/libmmcamera_dbg.so|e651b77722ac373a988ac693ea7c6eb1c988da38
 vendor/lib64/libsdsprpc.so|bbdf1ef1f78e1d4394953dc2b4e5c3e1f969094a
 
 # ADSP modules - Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
