@@ -108,8 +108,8 @@ vendor/lib64/soundfx/libshoebox.so|c88c36d90d3a54dea8e3ef08114598942810ac28
 # Audio FX modules - from lavender QKQ1.190910.002 V12.5.7.0.QFGCNXM
 vendor/lib/soundfx/libmisoundfx.so|569ee2df586e95116b79cfb3d89429f2032a7a76
 
-# Alarm - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
-product/app/PowerOffAlarm/PowerOffAlarm.apk|ec6d75f8cb6c075906a36147a307775a8a9ae856
+# Alarm - from Zebra/helios/helios:14/14-32-12.00-UG-U00-STD-HEL-04/15:user/release-keys
+system_ext/app/PowerOffAlarm/PowerOffAlarm.apk|286b697582224fa492b0b433b0fa2dffce44a755
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|2cff0d9993e6f51e7095f43eb71014eea7cd4ea2
 system_ext/lib64/vendor.qti.hardware.alarm@1.0.so|11b9429eb2e612809d9c707ee4c634c783eb5d77
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|e0f7f753052162654541516c90983be7f520dbe2
