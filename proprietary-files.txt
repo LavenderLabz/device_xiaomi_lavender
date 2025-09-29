@@ -93,16 +93,16 @@ system_ext/framework/audiosphere.jar|53ca88f91715ffc503d1298d22fcdb3cc5f5b57b
 # Audio FX modules - from google/cheetah/cheetah:15/AP3A.241005.015
 vendor/lib/soundfx/libspatialaudio.so|1b574e25db97b76b712ddffda6da42c3c5c5df6e
 
-# Audio FX modules - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+# Audio FX modules - from Zebra/helios/helios:14/14-32-12.00-UG-U00-STD-HEL-04/15:user/release-keys
 vendor/lib/soundfx/libasphere.so|376a8e4740eda57dc825995fbd495f5d8442e691
-vendor/lib/soundfx/libqcbassboost.so|9099a034fc3983ea559222dd9d4b92078cfe3da1
-vendor/lib/soundfx/libqcreverb.so|786619cba9ac4ff890b69baa9caca588a1536c17
-vendor/lib/soundfx/libqcvirt.so|42639299fab70b8209afce318cad4b6878baceef
+vendor/lib/soundfx/libqcbassboost.so|a3ecfc814cc1b79b35efdef6567b06fde0d346d1
+vendor/lib/soundfx/libqcreverb.so|ac019122666e22de13235f9404664a13125d58a6
+vendor/lib/soundfx/libqcvirt.so|8639b517b2d94c7f8ef85edf6274bf6660ef5cea
 vendor/lib/soundfx/libshoebox.so|f3f1f82604a8a854c3526b1d4844a883349c0cd0
 vendor/lib64/soundfx/libasphere.so|e63f92f5d1d43a82c06a1ef13941e1ff73d2df0f
-vendor/lib64/soundfx/libqcbassboost.so|e4c4d6537597fa53c1435d3debe239b9f5d7465c
-vendor/lib64/soundfx/libqcreverb.so|9a0760965c1d1955877befb999733ac4ef07aa2f
-vendor/lib64/soundfx/libqcvirt.so|9733f7123114d1dc3790d63ee70d6228d7f54d66
+vendor/lib64/soundfx/libqcbassboost.so|031d61955ce1a459452fca2af1d01c9810867587
+vendor/lib64/soundfx/libqcreverb.so|b1aafb3714b6e11ad2bb84dd554c803f8d677ace
+vendor/lib64/soundfx/libqcvirt.so|f6d5cb5b5b10c4c0e2064b4a027c40b5b8b78709
 vendor/lib64/soundfx/libshoebox.so|c88c36d90d3a54dea8e3ef08114598942810ac28
 
 # Audio FX modules - from lavender QKQ1.190910.002 V12.5.7.0.QFGCNXM
