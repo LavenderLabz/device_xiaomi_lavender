@@ -719,6 +719,7 @@ vendor/lib/libdiag.so|692bc966dfd91498a2ccbfbb11152bba05e44c4e
 vendor/lib/libdsutils.so|93b4946d86aa5bc8345c46420290a953a00851e6
 vendor/lib/libidl.so|49a2d6bd5c91e52a1ce10f64ccb45c152c7b6a82
 vendor/lib/libmdmdetect.so|4605f4badf8aaafbb2f64d7623b4355eb1a50093
+vendor/lib/libminksocket.so|8e5a3ea8e8747fddc7cc4a2848e92d5922d2e3e6
 vendor/lib/libminkdescriptor.so|841a6200fc788d4bad1388ae1da2c70a2bf937ba
 vendor/lib/libnative-api.so|5a7fee4a97e541328a8fd7fc9d078a95fb7a1b32
 vendor/lib/libqcci_legacy.so|b26995e35162bcbad1e5ae59e70ae3067d754c78
