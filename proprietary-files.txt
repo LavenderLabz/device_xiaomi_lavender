@@ -559,41 +559,41 @@ vendor/firmware/a530v3_gpmu.fw2|0a2f6f450231673d75ba39e5d28776db3becf810
 vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
 vendor/firmware/a540_gpmu.fw2|3530f10b4825a3b08c79e0bcfaf6471ec8422f24
 
-# Graphics - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+# Graphics - from Zebra/helios/helios:14/14-32-12.00-UG-U00-STD-HEL-04/15:user/release-keys
 vendor/lib/egl/eglSubDriverAndroid.so|501f7cf3ec55d4ded5f5921e4fe0a0822d077d46
 vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so|42f0f4ab0ca69d7ba880bb9afcb0fb6f4290df98
 vendor/lib/egl/libGLESv1_CM_adreno.so|1e6924d8c36508360d38e764618b25b0443c4d8e
-vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so|1c6a646580bff7f4baf4aaf6d4eb0c2f7a55b75f
+vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so|ce017a3885059a2a30c5ce04e8c4bd8d88cec968
 vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so|f59f0611355ff8b5ce3cfb97abdf49f5183052ac
-vendor/lib/egl/libq3dtools_esx.so|fcbda2e21ccfebbd1c97c1ce6314fef3bbd412b5
+vendor/lib/egl/libq3dtools_esx.so|9654401bda2de9ff9925b11438d7f5f5607c0429
 vendor/lib/libadreno_utils.so|57dc2426c25c16a4f250f23a7dae9d7239c349d1
 vendor/lib/libC2D2.so|052f9701170bbfd82b6f028ad2524baff5aa1eab
 vendor/lib/libc2d30_bltlib.so|6e086b51de5f0b8fb45b18fdec7b4e7d5182420b
-vendor/lib/libCB.so|9098523ace3f4e00db7233b2920d2a788e442a8f
-vendor/lib/libgpudataproducer.so|a0e6988854846363fe40c7ccfc3353c09a25d17c
+vendor/lib/libCB.so|434783ddc99811eac83f41d955e0ce92701f894a
+vendor/lib/libgpudataproducer.so|4f26e6cdddc11846464baa51f83d21f814f5b9b1
 vendor/lib/libgsl.so|ac60cdedd871e7c7d3e9480bad67f9b30fa9f264
 vendor/lib/libllvm-glnext.so|821440a54f02c2ed401f0ac646475cb6e8fc171f
-vendor/lib/libllvm-qcom.so|8fd3c7d00f8ead582722be57a997ff25ef50558a
+vendor/lib/libllvm-qcom.so|c06529a517ac14d22c098eb1d8269cadab99e63b
 vendor/lib/libOpenCL.so|b2cf8b9102129029c56bbeaf6a3e4728c2ca6a57
 vendor/lib/librs_adreno.so|53c5e960452f14958e6893241995d1a42e576823
-vendor/lib/libVkLayer_q3dtools.so|fc2e7f99efb17245202d500be0df0bc5eb19b23e
+vendor/lib/libVkLayer_q3dtools.so|1a67f3228fb9ce192785f8bcb0585672d0d488d8
 vendor/lib64/egl/eglSubDriverAndroid.so|52cc62010df3eabdd440fc756e2c4abee35dabeb
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|ccb68f54eda4135c29b2cf059cc5d9cc2ed6b029
 vendor/lib64/egl/libGLESv1_CM_adreno.so|eac8a37f8a2cc19cfd0285ec54b0ea1bacfd7430
-vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|e3266eddb7e966ae0edadacfa589f4271000feb1
+vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|ee2ad21684f25b794d45bbbde0d0d960489feda1
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|7c40ea686640d4a481aacd2426347ef6abb593e7
-vendor/lib64/egl/libq3dtools_esx.so|6e2e9bc150592ef22b96f26d31244f8a2a4495e3
+vendor/lib64/egl/libq3dtools_esx.so|dec44f37757b530e1be8beea5205134a0cd52c20
 vendor/lib64/libadreno_utils.so|fd2e8e7ef74a136cab7e309827f5aaab402c9b37
 vendor/lib64/libC2D2.so|71f0be54afc7f8f9c8feeb9debc849706f8fb698
 vendor/lib64/libc2d30_bltlib.so|a9eb5dcac16a17967b7418f7359070e150e519af
-vendor/lib64/libCB.so|0ce369aa3a8fe8da04a1fbc1684051172d73fdaf
-vendor/lib64/libgpudataproducer.so|d94dab3cf584dde69c0fe22ac85266c0da9eac85
+vendor/lib64/libCB.so|576a9290637107979c0915fb596eeaecda0b71f1
+vendor/lib64/libgpudataproducer.so|8359c7d25f1960f7bebde712d3a848daa25b91a5
 vendor/lib64/libgsl.so|d39c92144b3bde0a15be1a0c9599ee957e3f79c0
 vendor/lib64/libllvm-glnext.so|b7f8cb7a5ab0056322cecce80172aff7c3decf0c
 vendor/lib64/libllvm-qcom.so|b55e4fbe013caee2357f77397be052db5d9e4484
 vendor/lib64/libOpenCL.so|c37467e36804a74722059a36e3dce3a7befb7f2f
 vendor/lib64/librs_adreno.so|3f8bccf5b5907cebc0d4edb2e804dc3f57fdf8eb
-vendor/lib64/libVkLayer_q3dtools.so|46d0b3b271d3f9c18f56f309cafb7630ce418f3a
+vendor/lib64/libVkLayer_q3dtools.so|cffd61a5d9ef8d1ddc1171810281d0bfb8f71553
 
 # Graphics (HDR) - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
 vendor/lib/libhdr_tm.so|9e9a3b4f22d443fb67dabe58e6e9ba0c4423621e
