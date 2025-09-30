@@ -994,7 +994,7 @@ system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|c27f4e77d677a3e8d1c1c91ca1b4
 system_ext/lib64/vendor.qti.mstatservice@1.0.so|924edc51a015d99dec5b4fdc9bbf754a2a41a136
 system_ext/priv-app/ims/ims.apk|6d3fa88eb5637eba8ff7c9ddc4a41a0b46eb2e03
 
-# Radio - IMS - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+# Radio - IMS - from Zebra/helios/helios:14/14-32-12.00-UG-U00-STD-HEL-04/15:user/release-keys
 vendor/bin/ims_rtp_daemon|ec805e6eb6540b793b85b4ed529e111826310ef7
 vendor/bin/imsdatadaemon|3b25c03cef374507f21a0e2c84aee17632a89180
 vendor/bin/imsqmidaemon|481387dd4c1da2ec6620e468cd43d19a0304f777
@@ -1021,7 +1021,7 @@ vendor/lib64/lib-imsvtcore.so|1c4212d9716ba5255cc4b03b31ca6b428351c675
 vendor/lib64/lib-imsxml.so|dab7df64fc22696b99a4790581b315f956f3579e
 vendor/lib64/lib-rcsconfig.so|5830ef455ea9f3ce356fd6fe94ee46570788bc03
 vendor/lib64/lib-rtpcommon.so|c834aff4d1f39e700cd032209e1a6eb45b3f49c0
-vendor/lib64/lib-rtpcore.so|6733d3cffe7b10fec4fe7b756ee808e9c2807dad
+vendor/lib64/lib-rtpcore.so|413a9800ad50dceffa7fe592222a064fca6fd5fe
 vendor/lib64/lib-rtpsl.so|86f59590b9650eb16decb0bcde98d4447ef06682
 vendor/lib64/lib-siputility.so|10b3337b313d622542aad5f546e0a5378966a8e6
 vendor/lib64/lib-uceservice.so|6f74e3ddf3423fa414e5e8661f22b9c18badc876
