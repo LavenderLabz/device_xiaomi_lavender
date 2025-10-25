@@ -599,13 +599,13 @@ vendor/lib64/libVkLayer_q3dtools.so|cffd61a5d9ef8d1ddc1171810281d0bfb8f71553
 vendor/lib/libhdr_tm.so|9e9a3b4f22d443fb67dabe58e6e9ba0c4423621e
 vendor/lib64/libhdr_tm.so|d8b25ba8b8f8a157b2a6f9ba6fb0d89a96dd4030
 
-# Graphics (Postprocessing) - from LA.QSSI.15.0.r1-12900-qssi.0
-system_ext/lib64/libsd_sdk_display.qti.so|77deda9142f0bb2b18f65597003e267d88f5fc48
-system_ext/lib64/libsdm-disp-apis.qti.so|eeb2a8a6ef44909357f7279e64422f7694fa8545
-system_ext/lib64/vendor.display.color@1.0.so;MODULE_SUFFIX=_system_ext|e887c0d7899b9b1bd2c8ae43be82b444452a1a6f
-system_ext/lib64/vendor.display.color@1.1.so;MODULE_SUFFIX=_system_ext|6a033c803d73a54b83adcb77e9146dd3dd79499d
-system_ext/lib64/vendor.display.color@1.2.so;MODULE_SUFFIX=_system_ext|21527bf2f63e98ef27f9739804b760c59509b6b2
-system_ext/lib64/vendor.display.postproc@1.0.so;MODULE_SUFFIX=_system_ext|7c89073b693db96036fc18817bbbd2043e90794e
+# Graphics (Postprocessing) - LA.QSSI.16.0.r1-06700-qssi.0
+system_ext/lib64/libsd_sdk_display.qti.so|56b6a99103fe1e0293e8f03d7e5a0da2d1fa58bd
+system_ext/lib64/libsdm-disp-apis.qti.so|2c7fd27f8e9e67d7e37b64f40d32315c793f47b6
+system_ext/lib64/vendor.display.color@1.0.so;MODULE_SUFFIX=_system_ext|6a31e7603df00c57549a60355c9956c2c592d356
+system_ext/lib64/vendor.display.color@1.1.so;MODULE_SUFFIX=_system_ext|a591e62cfbe8458cb5dc0e2a8af74efee2a589f1
+system_ext/lib64/vendor.display.color@1.2.so;MODULE_SUFFIX=_system_ext|d6ebb697c4678ab3ed9ec1b78a681773d6b47e20
+system_ext/lib64/vendor.display.postproc@1.0.so;MODULE_SUFFIX=_system_ext|a479abe9e56554bd20bc5ecdb2d957fa7bece8c4
 
 # Graphics (Postprocessing) - from Zebra/helios/helios:14/14-32-12.00-UG-U00-STD-HEL-04/15:user/release-keys
 vendor/bin/hw/vendor.display.color@1.0-service|fdccaf00679a2cc64e6bf66d323a01ff083ce79e
