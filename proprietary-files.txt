@@ -680,13 +680,13 @@ vendor/lib64/libgcs-osal.so|165528e49929a1549b6b1d25f352bd804ae65ef0
 vendor/lib64/libgcs.so|da63fb393414a8d1eec06a7c9b9facab2f13c322
 vendor/lib64/libmulawdec.so|09a7c865d2097fa7b35d009bf66b9f0519e7c57e
 
-# Media - from LA.QSSI.15.0.r1-14500-qssi.0
-system_ext/lib/extractors/libmmparserextractor.so|3c7641624c164b390f93725d83e849c8dd0e01a1
-system_ext/lib/libmmosal.so|8b1b39e2381cfd84178a278734cfddbcf73ecba4
-system_ext/lib/libmmparser_lite.so|dcae561fbcbca192143661425c8d24c02c88c60b
-system_ext/lib64/extractors/libmmparserextractor.so|6413fcd18af704e7c61c9144d907294d296388d3
-system_ext/lib64/libmmosal.so|43e0618b504500c348d974426eed3b234818a744
-system_ext/lib64/libmmparser_lite.so|b544304421692c25220ac01957a73cfd9931d8e7
+# Media - from LA.QSSI.16.0.r1-06700-qssi.0
+system_ext/lib/extractors/libmmparserextractor.so|d00f7a71ef9dfdd1c1b16821afee3146bf90f5e1
+system_ext/lib/libmmosal.so|5650fb1164f978b3af3758eabe9d48b9eea0af7b
+system_ext/lib/libmmparser_lite.so|e5a75b89606cba6adfb1b8c2bfe7eb23327ecef8
+system_ext/lib64/extractors/libmmparserextractor.so|599b82bea8e1dfdf803c3a59b4238efdfa279368
+system_ext/lib64/libmmosal.so|2c755dd7e3f06cf07b4dc9089c165006073025a9
+system_ext/lib64/libmmparser_lite.so|6886957eda7038e235579f669694ba396898ed73
 
 # Media - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
 vendor/lib/vendor.qti.hardware.vpp@1.1.so|2bf8de06341b625390e6fa0c5d83cee94ac1692d
