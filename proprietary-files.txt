@@ -125,7 +125,7 @@ system_ext/lib64/com.qualcomm.qti.ant@1.0.so|1c85c92dfd699645a1da0e8a87528fe9803
 # ANT+ - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|d81c62439958c309c34bc96bf63232fa3a6481b5
 
-# Bluetooth - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+# Bluetooth - from Zebra/helios/helios:14/14-32-12.00-UG-U03-STD-HEL-04/21:user/release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|5fb0c2184b062039281282baf6543f6bea56a9a8
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|d8ee3888c7aaacb12b118d10ac3d0bc6f78765db
