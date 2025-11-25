@@ -21,8 +21,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
@@ -36,8 +34,8 @@ import org.lineageos.settings.device.R;
 import org.lineageos.settings.device.kcal.KcalUtils;
 import org.lineageos.settings.device.FileUtils;
 
-public class KcalSettingsFragment extends SettingsBasePreferenceFragment implements
-        OnPreferenceChangeListener, CompoundButton.OnCheckedChangeListener {
+public class KcalSettingsFragment extends SettingsBasePreferenceFragment
+        implements OnPreferenceChangeListener {
 
     private static final String TAG = "KcalSettings";
 
@@ -56,14 +54,15 @@ public class KcalSettingsFragment extends SettingsBasePreferenceFragment impleme
         setPreferencesFromResource(R.xml.kcal_settings, rootKey);
         mSharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
 
-        mKcalSwitchPreference = (MainSwitchPreference) findPreference("kcal_enable");
+        MainSwitchPreference mKcalSwitchPreference = findPreference("kcal_enable");
+        mKcalSwitchPreference.setOnPreferenceChangeListener(this);
         mResetButton = (Preference) findPreference("reset_default_button");
 
         // Check if the node exists and enable / disable the preference depending on the case
         if (KcalUtils.isKcalSupported()) {
+            mKcalSwitchPreference.setEnabled(true);
             configurePreferences();
             KcalUtils.writeCurrentSettings(mSharedPrefs);
-            configurePreferences();
         } else {
             mKcalSwitchPreference.setEnabled(false);
             mKcalSwitchPreference.setSummary(getString(R.string.kcal_not_supported));
@@ -74,6 +73,9 @@ public class KcalSettingsFragment extends SettingsBasePreferenceFragment impleme
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         switch (preference.getKey()){
+            case "kcal_enable":
+                KcalUtils.writeConfigToNode(KcalUtils.KCAL_ENABLE_NODE, 0, (Boolean) newValue ? 1 : 0);
+                break;
             case "red_slider":
                 KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 1, (Integer) newValue);
                 mRedColorSlider.setSummary(String.valueOf(newValue));
@@ -95,19 +97,12 @@ public class KcalSettingsFragment extends SettingsBasePreferenceFragment impleme
                 mContrastSlider.setSummary(String.valueOf(newValue));
                 break;
         }
-        return true;
-    }
 
-    @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        mKcalSwitchPreference.setChecked(isChecked);
-        KcalUtils.writeConfigToNode(KcalUtils.KCAL_ENABLE_NODE, 0, isChecked ? 1 : 0);
+        return true;
     }
 
     // Configure the switches, preferences and sliders
     private void configurePreferences() {
-        mKcalSwitchPreference.setEnabled(true);
-        mKcalSwitchPreference.addOnSwitchChangeListener(this);
 
         // Set the preference so it resets all the other preference's values, and applies the configuration on click
         mResetButton.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {

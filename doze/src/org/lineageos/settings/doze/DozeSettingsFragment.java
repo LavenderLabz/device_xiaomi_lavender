@@ -24,10 +24,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
+
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
@@ -37,9 +36,7 @@ import com.android.settingslib.widget.MainSwitchPreference;
 import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 
 public class DozeSettingsFragment extends SettingsBasePreferenceFragment
-        implements OnCheckedChangeListener, OnPreferenceChangeListener {
-
-    private MainSwitchPreference mSwitchBar;
+        implements OnPreferenceChangeListener {
 
     private SwitchPreferenceCompat mWakeOnGesturePreference;
     private SwitchPreferenceCompat mPickUpPreference;
@@ -60,9 +57,9 @@ public class DozeSettingsFragment extends SettingsBasePreferenceFragment
 
         boolean dozeEnabled = Utils.isDozeEnabled(getActivity());
 
-        mSwitchBar = (MainSwitchPreference) findPreference(Utils.DOZE_ENABLE);
-        mSwitchBar.addOnSwitchChangeListener(this);
-        mSwitchBar.setChecked(dozeEnabled);
+        MainSwitchPreference switchBar = findPreference(Utils.DOZE_ENABLE);
+        switchBar.setOnPreferenceChangeListener(this);
+        switchBar.setChecked(dozeEnabled);
 
         mWakeOnGesturePreference = (SwitchPreferenceCompat) findPreference(Utils.WAKE_ON_GESTURE_KEY);
         mWakeOnGesturePreference.setEnabled(dozeEnabled);
@@ -91,21 +88,21 @@ public class DozeSettingsFragment extends SettingsBasePreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        mHandler.post(() -> Utils.checkDozeService(getActivity()));
-        return true;
-    }
+        boolean isChecked = (Boolean) newValue;
 
-    @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        Utils.enableDoze(getActivity(), isChecked);
+        if (Utils.DOZE_ENABLE.equals(preference.getKey())) {
+            Utils.enableDoze(getActivity(), isChecked);
+
+            mWakeOnGesturePreference.setEnabled(isChecked);
+            mPickUpPreference.setEnabled(isChecked);
+            mHandwavePreference.setEnabled(isChecked);
+            mPocketPreference.setEnabled(isChecked);
+        } else {
+            Utils.enableGesture(getActivity(), preference.getKey(), isChecked);
+        }
+
         Utils.checkDozeService(getActivity());
-
-        mSwitchBar.setChecked(isChecked);
-
-        mWakeOnGesturePreference.setEnabled(isChecked);
-        mPickUpPreference.setEnabled(isChecked);
-        mHandwavePreference.setEnabled(isChecked);
-        mPocketPreference.setEnabled(isChecked);
+        return true;
     }
 
     private void showHelp() {
