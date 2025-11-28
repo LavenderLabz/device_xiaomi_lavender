@@ -402,7 +402,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     SDM660CarrierConfigOverlay \
     SDM660DeviceAsWebcam \
-    SDM660DialerOverlay \
     SDM660FrameworksOverlay \
     SDM660RILFrameworksOverlay \
     SDM660RILSettingsOverlay \
