@@ -20,6 +20,7 @@ ro.bluetooth.wipower=false
 
 # Blur
 ro.surface_flinger.supports_background_blur=1
+ro.surface_flinger.blur_disabled_by_default=true
 
 # Camera
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam
