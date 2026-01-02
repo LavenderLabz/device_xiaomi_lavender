@@ -71,7 +71,6 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 # Display
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
-SOONG_CONFIG_qtidisplay_gralloc4 := true
 TARGET_USES_ION := true
 
 # GPS
