@@ -71,6 +71,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 # Display
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
+TARGET_NEEDS_RAW10_BUFFER_FIX := true
 TARGET_USES_ION := true
 
 # GPS
