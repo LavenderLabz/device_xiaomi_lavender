@@ -26,17 +26,17 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SeekBarPreference;
 
 import com.android.settingslib.widget.MainSwitchPreference;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 
 import org.lineageos.settings.device.R;
 import org.lineageos.settings.device.kcal.KcalUtils;
 import org.lineageos.settings.device.FileUtils;
 
-public class KcalSettingsFragment extends PreferenceFragmentCompat implements
+public class KcalSettingsFragment extends SettingsBasePreferenceFragment implements
         OnPreferenceChangeListener, CompoundButton.OnCheckedChangeListener {
 
     private static final String TAG = "KcalSettings";

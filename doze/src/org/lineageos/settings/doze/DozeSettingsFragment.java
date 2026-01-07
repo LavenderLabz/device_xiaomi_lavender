@@ -31,12 +31,12 @@ import androidx.fragment.app.DialogFragment;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.settingslib.widget.MainSwitchPreference;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 
-public class DozeSettingsFragment extends PreferenceFragmentCompat
+public class DozeSettingsFragment extends SettingsBasePreferenceFragment
         implements OnCheckedChangeListener, OnPreferenceChangeListener {
 
     private MainSwitchPreference mSwitchBar;
