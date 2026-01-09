@@ -16,7 +16,6 @@
 
 package org.lineageos.settings.device.speaker;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -29,14 +28,8 @@ public class ClearSpeakerActivity extends CollapsingToolbarBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
-        if (fragment == null) {
-            clearSpeakerFragment = new ClearSpeakerFragment();
-            getFragmentManager().beginTransaction()
-                    .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, clearSpeakerFragment)
-                    .commit();
-        }
+        getSupportFragmentManager().beginTransaction()
+            .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame, new ClearSpeakerFragment())
+            .commit();
     }
 }

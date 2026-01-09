@@ -19,7 +19,7 @@ package org.lineageos.settings.device;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
@@ -33,7 +33,7 @@ import org.lineageos.settings.device.preferences.CustomSeekBarPreference;
 
 import java.lang.Math.*;
 
-public class DeviceSettings extends PreferenceFragment implements
+public class DeviceSettings extends PreferenceFragmentCompat implements
         Preference.OnPreferenceChangeListener {
 
     public static final String CATEGORY_VIBRATOR = "vibration";

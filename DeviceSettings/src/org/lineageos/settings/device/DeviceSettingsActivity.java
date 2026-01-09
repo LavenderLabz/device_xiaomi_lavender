@@ -16,27 +16,19 @@
 
 package org.lineageos.settings.device;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
 public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
-
-    private DeviceSettings deviceSettingsFragment;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
-        if (fragment == null) {
-            deviceSettingsFragment = new DeviceSettings();
-            getFragmentManager().beginTransaction()
-                    .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, deviceSettingsFragment)
-                    .commit();
-        }
+        getSupportFragmentManager().beginTransaction()
+            .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame, new DeviceSettings())
+            .commit();
     }
 
 }
