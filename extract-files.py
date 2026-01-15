@@ -111,6 +111,8 @@ lib_fixups: lib_fixups_user_type = {
         'vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so',
         'vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so',
         'vendor/lib64/vendor.qti.imsrtpservice@3.0.so',
+        'vendor/lib/vendor.qti.hardware.fm@1.0.so',
+        'vendor/lib64/vendor.qti.hardware.fm@1.0.so',
     ): lib_fixup_vendor_suffix,
 }
 
