@@ -122,7 +122,6 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/hw/consumerir.lirc.sdm660.so', 'consumerir.spi.sdm660.so'): blob_fixup()
         .fix_soname(),
     'system_ext/lib64/libqxrsplitauxservice.qti.so': blob_fixup()
-        .add_needed('libaudioclient_shim.so')
         .add_needed('libwfdservice_shim.so')
 }  # fmt: skip
 
