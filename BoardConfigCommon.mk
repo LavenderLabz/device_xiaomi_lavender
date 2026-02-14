@@ -70,7 +70,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 # Display
-TARGET_NEEDS_RAW10_BUFFER_FIX := true
+SOONG_CONFIG_qtidisplay_target_needs_raw10_buffer_fix := true
 TARGET_USES_ION := true
 
 # GPS
