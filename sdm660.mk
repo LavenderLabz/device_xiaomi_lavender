@@ -395,13 +395,8 @@ ifeq ($(EAS_POWERHINT_VARIANT), sdm636)
     PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sdm636_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 else
-    ifeq ($(DEVICE_SUPPORTS_UCLAMP), false)
-      PRODUCT_COPY_FILES += \
-        $(COMMON_PATH)/configs/sdm660_powerhint-no-uclamp.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-    else
-      PRODUCT_COPY_FILES += \
-        $(COMMON_PATH)/configs/sdm660_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-  endif
+    PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/sdm660_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 endif
 
 # Preopt SystemUI
