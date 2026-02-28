@@ -21,15 +21,6 @@
          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
 
-    <!-- Set this to true to enable the platform's auto-power-save modes like doze and
-         app standby.  These are not enabled by default because they require a standard
-         cloud-to-device messaging service for apps to interact correctly with the modes
-         (such as to be able to deliver an instant message to the device even when it is
-         dozing).  This should be enabled if you have such services and expect apps to
-         correctly use them when installed on your device.  Otherwise, keep this disabled
-         so that applications can still use their own mechanisms. -->
-    <bool name="config_enableAutoPowerModes">true</bool>
-
     <!-- This string array should be overridden by the device to present a list of radio
          attributes.  This is used by the connectivity manager to decide which networks can coexist
          based on the hardware -->
@@ -73,25 +64,6 @@
         <!-- B b-coefficient --> <item>0.000207598323269139</item>
         <!-- B y-intercept --> <item>-0.349361641294833436</item>
     </string-array>
-
-    <!-- Control the behavior when the user long presses the power button.
-            0 - Nothing
-            1 - Global actions menu
-            2 - Power off (with confirmation)
-            3 - Power off (without confirmation)
-            4 - Go to voice assist
-            5 - Go to assistant (Settings.Secure.ASSISTANT)
-            6 - Go to sleep (doze)
-            7 - Toggle torch on / off (if screen is off)
-    -->
-    <integer name="config_longPressOnPowerBehavior">1</integer>
-
-    <!-- Control the behavior when the user presses the power and volume up buttons together.
-            0 - Nothing
-            1 - Mute toggle
-            2 - Global actions menu
-    -->
-    <integer name="config_keyChordPowerVolumeUp">1</integer>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
@@ -921,12 +893,6 @@
       <item>"/system/bin/surfaceflinger"</item>
    </string-array>
 
-    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
-    <bool name="config_useRoundIcon">true</bool>
-
-    <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
-    <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
-
     <!-- The component name, flattened to a string, for the default autofill service
          to  enabled for a user. This service must be trusted, as it can be activated
          without explicit consent of the user. If no autofill service with the
@@ -938,9 +904,6 @@
      sending a request to enable or disable the camera while the video session is also
      paused. -->
     <bool name="config_useVideoPauseWorkaround">true</bool>
-
-    <!-- Controls whether system buttons use all caps for text -->
-    <bool name="config_buttonTextAllCaps">false</bool>
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
