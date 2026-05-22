@@ -373,7 +373,7 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.spi.sdm660.so|f
 
 # DPM - from LA.QISI.16.0.r1-01200-qssi.0
 system/framework/tcmclient.jar|813088785d732feaf5dd66627b8cbc44f0ae4223
-system_ext/bin/dpmd|8d68d3ed507d2e6a6742b04853c6f1ad40c426a4
+system_ext/bin/dpmd|7346e232697c3a221d13045a7a4b0e683ef0d4f8
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|e9af21d1ac999fd7c6ed04378e1cfc48734ef1ab
 system_ext/etc/permissions/com.qti.dpmframework.xml|c4b7ad0879d00c1eba4f3fe3a88ddb8aa153629a
