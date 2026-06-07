@@ -19,14 +19,10 @@ package org.lineageos.settings.device;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.provider.Settings;
-import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.device.preferences.SecureSettingSwitchPreference;
 import java.lang.Math.*;
-
-import org.lineageos.settings.device.kcal.KcalUtils;
 
 public class BootReceiver extends BroadcastReceiver {
 
@@ -35,7 +31,6 @@ public class BootReceiver extends BroadcastReceiver {
     public static final  String MIC_GAIN_PATH = "/sys/kernel/sound_control/mic_gain";
     
     public void onReceive(Context context, Intent intent) {
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 
         // Audio Gain
         int gain = Settings.Secure.getInt(context.getContentResolver(),
@@ -75,8 +70,5 @@ public class BootReceiver extends BroadcastReceiver {
         if (enabled) {
             context.startService(new Intent(context, FPSInfoService.class));
         }
-
-        if (KcalUtils.isKcalSupported())
-             KcalUtils.writeCurrentSettings(sharedPrefs);
     }
 }
