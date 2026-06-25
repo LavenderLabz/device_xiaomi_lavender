@@ -95,10 +95,6 @@ PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmmcamera_mg_faceppshim
 
-# Configstore (Disabled)
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.lineage.xiaomi_sdm660
