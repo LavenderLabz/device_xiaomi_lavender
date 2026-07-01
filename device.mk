@@ -205,6 +205,9 @@ PRODUCT_PACKAGES += \
     init.xiaomi_parts.rc \
     ueventd.qcom.rc
 
+# libion
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # IRQ & IRSC
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
