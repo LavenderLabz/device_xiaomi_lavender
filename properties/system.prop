@@ -111,8 +111,5 @@ persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.force_on_dc=true
 ril.subscription.types=NV,RUIM
 
-# Verity
-ro.apk_verity.mode=2
-
 # Zygote preforking
 persist.device_config.runtime_native.usap_pool_enabled=true
