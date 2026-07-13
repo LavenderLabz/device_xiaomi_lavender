@@ -69,6 +69,9 @@ TARGET_SCREEN_DENSITY := 420
 SOONG_CONFIG_qtidisplay_target_needs_raw10_buffer_fix := true
 TARGET_USES_VULKAN := false
 
+# Fastbootd - it is enabled by default now
+TARGET_DISABLE_FASTBOOTD := true
+
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 

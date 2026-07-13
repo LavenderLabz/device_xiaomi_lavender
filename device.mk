@@ -128,10 +128,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@latest-service.clearkey
 
-# Fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-
 # File systems / Ramdisk
 PRODUCT_PACKAGES += \
     e2fsck_ramdisk \
