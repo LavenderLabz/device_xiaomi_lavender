@@ -95,6 +95,8 @@ PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmmcamera_mg_faceppshim
 
+$(call soong_config_set,libcameraservice,ext_lib,//$(DEVICE_PATH):libcameraservice_extension.xiaomi_sdm660)
+
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.lineage.xiaomi_sdm660
