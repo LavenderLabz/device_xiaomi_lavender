@@ -67,6 +67,7 @@ TARGET_SCREEN_DENSITY := 420
 
 # Display & Graphics
 TARGET_NEEDS_RAW10_BUFFER_FIX := true
+TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_USES_VULKAN := false
 
 # Fastbootd - it is enabled by default now
