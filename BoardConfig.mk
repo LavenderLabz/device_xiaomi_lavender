@@ -66,7 +66,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 TARGET_SCREEN_DENSITY := 420
 
 # Display & Graphics
-SOONG_CONFIG_qtidisplay_target_needs_raw10_buffer_fix := true
+TARGET_NEEDS_RAW10_BUFFER_FIX := true
 TARGET_USES_VULKAN := false
 
 # Fastbootd - it is enabled by default now
