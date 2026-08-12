@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Do not translate. Defines the slots is Two Digit Number for dialing normally not USSD.
+
+         Note: This config is deprecated, please use carrier config which is
+               CarrierConfigManager.KEY_MMI_TWO_DIGIT_NUMBER_PATTERN_STRING_ARRAY instead. -->
+    <string-array name="config_twoDigitNumberPattern">
+        <item>"0"</item>
+        <item>"00"</item>
+        <item>"*2"</item>
+    </string-array>
+</resources>

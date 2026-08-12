@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018-2020 The Xiaomi-SDM660 Project
+<!-- Copyright (C) 2026 The LineageOS Project
      https://github.com/xiaomi-sdm660
      
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,10 +18,6 @@
     <string name="advanced_settings_summary">Дополнительные настройки</string>
 
     <string name="display_title">Экран</string>
-
-    <!-- Mi Note 3 Settings -->
-    <string name="jason_pref_title">Настройки устройства</string>
-    <string name="jason_pref_summary">Mi Note 3 дополнительние настройки</string>
 
     <!-- Notification LED brightness -->
     <string name="notification_title">Светодиод уведомлений</string>
@@ -92,10 +88,6 @@
     <string name="dirac_preset_dance">Танцевальная</string>
     <string name="dirac_preset_metal">Металл</string>
 
-    <string name="hall_wakeup_title">Пробуждение умным чехлом</string>
-    <string name="hall_title">Включить пробуждение откидной крышкой</string>
-    <string name="hall_wakeup_summary">Пробуждение устройства через магнитную откидную крышку</string>
-
     <!-- CustomSeekBarPreference -->
     <string name="edit_value">Выбрать новое значение</string>
     <string name="default_value">Значение по умолчанию</string>
@@ -109,5 +101,9 @@
     <string name="audio_amplify">Усиление звука</string>
     <string name="headphone_gain">Усиление наушников</string>
     <string name="mic_gain">Усиление микрофона</string>
-    
+
+    <string name="hall_wakeup_title">Пробуждение умным чехлом</string>
+    <string name="hall_title">Включить пробуждение откидной крышкой</string>
+    <string name="hall_wakeup_summary">Пробуждение устройства через магнитную откидную крышку</string>
+
 </resources>

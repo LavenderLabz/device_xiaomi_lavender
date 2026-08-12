@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018-2019 The Xiaomi-SDM660 Project
+ * Copyright (C) 2018-2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,10 +48,12 @@ public class BootReceiver extends BroadcastReceiver {
         // Vibration Strength
         FileUtils.setValue(DeviceSettings.VIBRATION_STRENGTH_PATH, Settings.Secure.getInt(
                 context.getContentResolver(), DeviceSettings.PREF_VIBRATION_STRENGTH, 80) / 100.0 * (DeviceSettings.MAX_VIBRATION - DeviceSettings.MIN_VIBRATION) + DeviceSettings.MIN_VIBRATION);
-        FileUtils.setValue(DeviceSettings.HALL_WAKEUP_PATH, Settings.Secure.getInt(
-                context.getContentResolver(), DeviceSettings.PREF_HALL_WAKEUP, 1) == 1 ? "Y" : "N");
-        FileUtils.setProp(DeviceSettings.HALL_WAKEUP_PROP, Settings.Secure.getInt(
-                context.getContentResolver(), DeviceSettings.PREF_HALL_WAKEUP, 1) == 1);
+
+        // Hall wakeup
+        boolean hallWakeupEnabled = Settings.Secure.getInt(context.getContentResolver(),
+                DeviceSettings.PREF_HALL_WAKEUP, 1) == 1;
+        FileUtils.setValue(DeviceSettings.HALL_WAKEUP_PATH, hallWakeupEnabled ? "Y" : "N");
+        FileUtils.setProp(DeviceSettings.HALL_WAKEUP_PROP, hallWakeupEnabled);
 
         // Thermal
         FileUtils.setValue(DeviceSettings.THERMAL_PATH, Settings.Secure.getInt(context.getContentResolver(),

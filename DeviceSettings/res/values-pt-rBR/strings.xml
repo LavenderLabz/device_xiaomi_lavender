@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018-2020 The Xiaomi-SDM660 Project
+<!-- Copyright (C) 2026 The LineageOS Project
      https://github.com/xiaomi-sdm660
      
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,10 +18,6 @@
     <string name="advanced_settings_summary">Configurações específicas do aparelho</string>
 
     <string name="display_title">Tela</string>
-
-    <!-- Mi Note 3 Settings -->
-    <string name="jason_pref_title">Configurações do Aparelho</string>
-    <string name="jason_pref_summary">Configurações extras do Mi Note 3</string>
 
     <!-- Notification LED brightness -->
     <string name="notification_title">LED de notificação</string>
@@ -92,10 +88,6 @@
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
 
-    <string name="hall_wakeup_title">Flip Cover</string>
-    <string name="hall_title">Ativar a tela com Flip Cover</string>
-    <string name="hall_wakeup_summary">Ativa a tela ao usar uma Flip Cover magnética</string>
-
     <!-- CustomSeekBarPreference -->
     <string name="edit_value">Escolher novo valor</string>
     <string name="default_value">Valor padrão</string>
@@ -109,5 +101,9 @@
     <string name="audio_amplify">Amplificar audio</string>
     <string name="headphone_gain">Ganho do headphone</string>
     <string name="mic_gain">Ganho do microfone</string>
+
+    <string name="hall_wakeup_title">Flip Cover</string>
+    <string name="hall_title">Ativar a tela com Flip Cover</string>
+    <string name="hall_wakeup_summary">Ativa a tela ao usar uma Flip Cover magnética</string>
 
 </resources>

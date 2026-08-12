@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018-2020 The Xiaomi-SDM660 Project
+<!-- Copyright (C) 2026 The LineageOS Project
      https://github.com/xiaomi-sdm660
      
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,10 +18,6 @@
     <string name="advanced_settings_summary">Konfigurasi spesifik perangkat</string>
 
     <string name="display_title">Layar</string>
-
-    <!-- Mi Note 3 Settings -->
-    <string name="jason_pref_title">Setelan layar</string>
-    <string name="jason_pref_summary">Setelan tambahan untuk layar</string>
 
     <!-- Notification LED brightness -->
     <string name="notification_title">LED Notifikasi</string>
@@ -90,10 +86,6 @@
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
 
-    <string name="hall_wakeup_title">Flip cover nyala</string>
-    <string name="hall_title">Aktifkan Flip Cover nyala</string>
-    <string name="hall_wakeup_summary">Nyalakan perangkat saat flip cover magnetik dibuka</string>
-
     <!-- CustomSeekBarPreference -->
     <string name="edit_value">Pilih nilai baru</string>
     <string name="default_value">Nilai bawaan</string>
@@ -107,5 +99,9 @@
     <string name="audio_amplify">Pengeras suara</string>
     <string name="headphone_gain">Headphone Gain</string>
     <string name="mic_gain">Microphone Gain</string>
+
+    <string name="hall_wakeup_title">Flip cover nyala</string>
+    <string name="hall_title">Aktifkan Flip Cover nyala</string>
+    <string name="hall_wakeup_summary">Nyalakan perangkat saat flip cover magnetik dibuka</string>
 
 </resources>

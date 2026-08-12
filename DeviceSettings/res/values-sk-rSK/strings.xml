@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018-2020 The Xiaomi-SDM660 Project
+<!-- Copyright (C) 2026 The LineageOS Project
      https://github.com/xiaomi-sdm660
      
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,10 +18,6 @@
     <string name="advanced_settings_summary">Rozšírené nastavenia</string>
 
     <string name="display_title">Displej</string>
-
-    <!-- Mi Note 3 Settings -->
-    <string name="jason_pref_title">Nastavenia zariadenia</string>
-    <string name="jason_pref_summary">Mi Note 3 rozšírené nastavenia</string>
 
     <!-- Notification LED brightness -->
     <string name="notification_title">Nortifikačná LED</string>
@@ -90,10 +86,6 @@
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
 
-    <string name="hall_wakeup_title">Zobudenie preklopením krytu</string>
-    <string name="hall_title">Povoliť zobudenie preklopením krytu</string>
-    <string name="hall_wakeup_summary">Zobudenia zariadenia magnetickým krytom</string>
-
     <!-- CustomSeekBarPreference -->
     <string name="edit_value">Zvoliť novú hodnotu</string>
     <string name="default_value">Základná hodnota</string>
@@ -107,5 +99,9 @@
     <string name="audio_amplify">Zosilnenie zvuku</string>
     <string name="headphone_gain">Zisk slúchadiel</string>
     <string name="mic_gain">Zisk mikrofónu</string>
+
+    <string name="hall_wakeup_title">Zobudenie preklopením krytu</string>
+    <string name="hall_title">Povoliť zobudenie preklopením krytu</string>
+    <string name="hall_wakeup_summary">Zobudenia zariadenia magnetickým krytom</string>
 
 </resources>

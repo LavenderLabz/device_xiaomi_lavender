@@ -1,6 +1,6 @@
 #!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
 #
-# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-FileCopyrightText: 2026 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -18,7 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/sdm660-common',
+    'device/xiaomi/lavender',
     'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/sdm660',
     'hardware/qcom-caf/wlan',
@@ -28,6 +28,7 @@ namespace_imports = [
     'vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um',
     'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/display',
+    'vendor/xiaomi/lavender',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
@@ -118,19 +119,28 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'vendor/lib/soundfx/libdirac.so': blob_fixup()
-        .add_needed('liglog.so'),
-    ('vendor/lib64/hw/consumerir.lirc.sdm660.so', 'consumerir.spi.sdm660.so'): blob_fixup()
-        .fix_soname(),
+        .add_needed('liblog.so'),
     'system_ext/lib64/libqxrsplitauxservice.qti.so': blob_fixup()
         .add_needed('libwfdservice_shim.so'),
-    "vendor/bin/mm-pp-dpps": blob_fixup()
+    'vendor/bin/mm-pp-dpps': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     ('system_ext/lib64/lib-imscamera.so', 'system_ext/lib64/lib-imsvideocodec.so'): blob_fixup()
         .add_needed('libgui_shim.so'),
+    ('vendor/lib/libts_face_beautify_hal.so', 'vendor/lib/libts_detected_face_hal.so', 'vendor/lib/lib_lowlight.so'): blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    ('vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so', 'vendor/lib64/hw/fingerprint.fpc.default.so', 'vendor.qti.hardware.fingerprint@1.0.so'): blob_fixup()
+        .remove_needed('libhidltransport.so')
+        .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
+    'vendor/lib/libmmcamera_faceproc.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+    'vendor/lib/libmmcamera_imglib.so': blob_fixup()
+        .replace_needed('libmmcamera_mg_facepp_lib.so', 'libmmcamera_mg_faceppshim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sdm660-common',
+    'lavender',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

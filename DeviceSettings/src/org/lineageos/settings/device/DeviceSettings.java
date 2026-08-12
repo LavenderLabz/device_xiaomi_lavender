@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018-2019 The Xiaomi-SDM660 Project
+ * Copyright (C) 2018-2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -82,8 +82,6 @@ public class DeviceSettings extends SettingsBasePreferenceFragment implements
 
     private static final String DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
 
-    private static final String DEVICE_JASON_PACKAGE_NAME = "org.lineageos.settings.devicex";
-    private static final String PREF_DEVICE_JASON = "device_jason";
     
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
     private Preference mClearSpeakerPref;
@@ -148,10 +146,7 @@ public class DeviceSettings extends SettingsBasePreferenceFragment implements
         if (isAppNotInstalled(DEVICE_DOZE_PACKAGE_NAME)) {
             displayCategory.removePreference(findPreference(PREF_DEVICE_DOZE));
         }
-        // Jason Settings
-        if (isAppNotInstalled(DEVICE_JASON_PACKAGE_NAME)) {
-            displayCategory.removePreference(findPreference(PREF_DEVICE_JASON));
-        }
+
         //FPS Info
         SecureSettingSwitchPreference fpsInfo = (SecureSettingSwitchPreference) findPreference(PREF_KEY_FPS_INFO);
         fpsInfo.setOnPreferenceChangeListener(this);
