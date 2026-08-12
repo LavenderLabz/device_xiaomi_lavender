@@ -736,8 +736,6 @@
     
     <bool name="config_useVideoPauseWorkaround">true</bool>
 
-    
-    <bool name="config_zramWriteback">true</bool>
 
     
     <string-array name="config_biometric_sensors" translatable="false">
