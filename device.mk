@@ -141,10 +141,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@latest-service.clearkey
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # File systems / Ramdisk
 PRODUCT_PACKAGES += \
     e2fsck_ramdisk \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     resize2fs_ramdisk \
     tune2fs_ramdisk
 
@@ -280,6 +285,9 @@ PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
     vendor_dsp_mountpoint \
     vendor_firmware_mnt_mountpoint
+
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Permissions
 PRODUCT_COPY_FILES += \
