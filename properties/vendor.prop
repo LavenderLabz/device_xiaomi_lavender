@@ -15,7 +15,7 @@ vendor.audio.adm.buffering.ms=6
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.hal.boot.timeout.ms=20000
-vendor.audio_hal.period_multiplier=2 
+vendor.audio_hal.period_multiplier=2
 vendor.audio_hal.period_size=240
 vendor.audio.hw.aac.encoder=true
 vendor.audio.offload.buffer.size.kb=256
@@ -133,16 +133,12 @@ drm.service.enabled=true
 
 # Display
 debug.gralloc.enable_fb_ubwc=1
-debug.sdm.support_writeback=0
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.predict_hwc_composition_strategy=0
 dev.pm.dyn_samplingrate=1
 ro.vendor.display.cabl=2
-debug.hwui.skia_atrace_enabled=false
 vendor.display.disable_skip_validate=1
 vendor.display.enable_default_color_mode=0
-vendor.display.idle_time=32767
-vendor.gralloc.disable_ahardware_buffer=1
 vendor.gralloc.enable_fb_ubwc=1
 video.disable.ubwc=1
 vendor.video.disable.ubwc=1
@@ -153,6 +149,10 @@ sys.jdi_nt36672_length=45
 sys.paper_mode_max_level=32
 sys.tianma_nt36672_offset=12
 sys.tianma_nt36672_length=46
+
+# Rendering
+debug.egl.hw=1
+debug.sf.hw=1
 
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
@@ -168,10 +168,7 @@ debug.hwui.target_cpu_time_percent=30
 vidc.enc.dcvs.extra-buff-count=2
 
 # Misc
-keyguard.no_require_sim=true
-persist.vendor.delta_time.enable=true
 qemu.hw.mainkeys=0
-ro.com.android.dataroaming=false
 
 # QCOM
 persist.vendor.qcomsysd.enabled=1
@@ -201,11 +198,6 @@ ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
-# Rendering
-debug.egl.hw=1
-debug.enable.sglscale=1
-debug.sf.recomputecrop=0
-
 # Sensors
 ro.vendor.sensors.facing=false
 ro.vendor.sdk.sensors.gestures=false
@@ -231,7 +223,6 @@ debug.sf.early.app.duration=20000000
 debug.sf.earlyGl.sf.duration=27600000
 debug.sf.earlyGl.app.duration=20000000
 debug.sf.hwc.min.duration=17000000
-debug.sf.hw=1
 debug.sf.enable_egl_image_tracker=true
 debug.sf.enable_hwc_vds=0
 debug.sf.enable_transaction_tracing=false
