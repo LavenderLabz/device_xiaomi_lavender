@@ -72,10 +72,6 @@ public class DeviceSettings extends SettingsBasePreferenceFragment implements
     private static final String CATEGORY_DISPLAY = "display";
     private static final String PREF_DEVICE_DOZE = "device_doze";
 
-    private static final String CATEGORY_HALL_WAKEUP = "hall_wakeup";
-    public static final String PREF_HALL_WAKEUP = "hall";
-    public static final String HALL_WAKEUP_PATH = "/sys/module/hall/parameters/hall_toggle";
-    public static final String HALL_WAKEUP_PROP = "persist.service.folio_daemon";
 
     public static final String PREF_THERMAL = "thermal";
     public static final String THERMAL_PATH = "/sys/devices/virtual/thermal/thermal_message/sconfig";
@@ -183,14 +179,6 @@ public class DeviceSettings extends SettingsBasePreferenceFragment implements
         mPreset = (SecureSettingListPreference) findPreference(PREF_PRESET);
         mPreset.setOnPreferenceChangeListener(this);
 
-        if (FileUtils.fileWritable(HALL_WAKEUP_PATH)) {
-            SecureSettingSwitchPreference hall = (SecureSettingSwitchPreference) findPreference(PREF_HALL_WAKEUP);
-            hall.setChecked(FileUtils.getValue(HALL_WAKEUP_PATH).equals("Y"));
-            hall.setOnPreferenceChangeListener(this);
-        } else {
-            getPreferenceScreen().removePreference(findPreference(CATEGORY_HALL_WAKEUP));
-        }
-
         if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
             mFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);
             mFastcharge.setEnabled(Fastcharge.isSupported());
@@ -253,10 +241,7 @@ public class DeviceSettings extends SettingsBasePreferenceFragment implements
                 }
                 break;
 
-            case PREF_HALL_WAKEUP:
-                FileUtils.setValue(HALL_WAKEUP_PATH, (boolean) value ? "Y" : "N");
-                FileUtils.setProp(HALL_WAKEUP_PROP, (boolean) value);
-                break;
+
 
             case PREF_KEY_FPS_INFO:
                 boolean enabled = (boolean) value;

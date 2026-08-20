@@ -102,8 +102,5 @@
     <string name="headphone_gain">Усиление наушников</string>
     <string name="mic_gain">Усиление микрофона</string>
 
-    <string name="hall_wakeup_title">Пробуждение умным чехлом</string>
-    <string name="hall_title">Включить пробуждение откидной крышкой</string>
-    <string name="hall_wakeup_summary">Пробуждение устройства через магнитную откидную крышку</string>
 
 </resources>

@@ -98,8 +98,5 @@
     <string name="dirac_preset_soft_bass">Bassi morbidi</string>
     <string name="dirac_preset_soft_treble">Alti morbidi</string>
 
-    <string name="hall_wakeup_title">Risveglio con flip cover</string>
-    <string name="hall_title">Abilita il risveglio con la flip cover</string>
-    <string name="hall_wakeup_summary">Risveglia il dispositivo con la flip cover magnetica</string>
 
 </resources>

@@ -116,10 +116,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DeviceSettings
 
-# Folio
-PRODUCT_PACKAGES += \
-    folio_daemon
-
 # Display & Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \

@@ -100,8 +100,5 @@
     <string name="headphone_gain">Zisk slúchadiel</string>
     <string name="mic_gain">Zisk mikrofónu</string>
 
-    <string name="hall_wakeup_title">Zobudenie preklopením krytu</string>
-    <string name="hall_title">Povoliť zobudenie preklopením krytu</string>
-    <string name="hall_wakeup_summary">Zobudenia zariadenia magnetickým krytom</string>
 
 </resources>

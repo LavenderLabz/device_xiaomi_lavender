@@ -77,8 +77,5 @@
     <string name="default_value">Valor por defecto</string>
     <string name="edit_hint" formatted="false">Valor entre %1$d y %2$d</string>
 
-    <string name="hall_wakeup_title">Despertar con funda flip</string>
-    <string name="hall_title">Activar levantamiento con funda flip</string>
-    <string name="hall_wakeup_summary">Despertar dispositivo con una funda flip magnética</string>
 
 </resources>

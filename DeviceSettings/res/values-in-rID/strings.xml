@@ -100,8 +100,5 @@
     <string name="headphone_gain">Headphone Gain</string>
     <string name="mic_gain">Microphone Gain</string>
 
-    <string name="hall_wakeup_title">Flip cover nyala</string>
-    <string name="hall_title">Aktifkan Flip Cover nyala</string>
-    <string name="hall_wakeup_summary">Nyalakan perangkat saat flip cover magnetik dibuka</string>
 
 </resources>

@@ -102,8 +102,5 @@
     <string name="headphone_gain">Ganho do headphone</string>
     <string name="mic_gain">Ganho do microfone</string>
 
-    <string name="hall_wakeup_title">Flip Cover</string>
-    <string name="hall_title">Ativar a tela com Flip Cover</string>
-    <string name="hall_wakeup_summary">Ativa a tela ao usar uma Flip Cover magnética</string>
 
 </resources>
