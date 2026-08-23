@@ -13,10 +13,6 @@
     <string name="notification_title">알림 LED</string>
     <string name="notification_led_title">LED 밝기</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">앰비언트 디스플레이</string>
-    <string name="advanced_doze_summary">앰비언트 디스플레이 설정</string>
-
     <string name="vibration_title">햅틱 피드백</string>
     <string name="vibration_strength_title">강도</string>
 

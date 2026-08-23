@@ -15,10 +15,6 @@
     <string name="notification_title">LED di notifica</string>
     <string name="notification_led_title">Luminosità LED</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">Display Ambient</string>
-    <string name="advanced_doze_summary">Impostazioni ambient specifiche del dispositivo</string>
-
     <string name="vibration_title">Feedback aptico</string>
     <string name="vibration_strength_title">Intensità</string>
 

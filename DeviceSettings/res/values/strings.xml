@@ -13,10 +13,6 @@
     <string name="notification_title">Notification LED</string>
     <string name="notification_led_title">LED Brightness</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">Ambient Display</string>
-    <string name="advanced_doze_summary">Device specific ambient gesture settings</string>
-
     <string name="vibration_title">Haptic Feedback</string>
     <string name="vibration_strength_title">Strength</string>
 

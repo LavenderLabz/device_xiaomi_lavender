@@ -23,10 +23,6 @@
     <string name="notification_title">Светодиод уведомлений</string>
     <string name="notification_led_title">Яркость светодиода</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">Ambient Экран</string>
-    <string name="advanced_doze_summary">Дополнительние настройки ambient</string>
-
     <string name="vibration_title">Вибрация</string>
     <string name="vibration_strength_title">Сила</string>
 

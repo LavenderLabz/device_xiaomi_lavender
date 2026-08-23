@@ -23,10 +23,6 @@
     <string name="notification_title">Nortifikačná LED</string>
     <string name="notification_led_title">Jas</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">Ambietný displej</string>
-    <string name="advanced_doze_summary">Rozšírené nastavenia ambientného displeja</string>
-
     <string name="vibration_title">Hmatová spätná odozva</string>
     <string name="vibration_strength_title">Sila</string>
 

@@ -9,10 +9,6 @@
 
     <string name="display_title">画面</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">アンビエント画面</string>
-    <string name="advanced_doze_summary">追加の設定アンビエント画面</string>
-
     <string name="vibration_title">振動フィードバック</string>
     <string name="vibration_strength_title">強さ</string>
 

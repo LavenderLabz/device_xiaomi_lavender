@@ -66,7 +66,6 @@
     <string name="edit_value">Wähle neuen Wert</string>
     <string name="default_value">Standard Wert</string>
     <string name="edit_hint" formatted="false">Wert zwischen %1d und %2d</string>
-    <string name="advanced_doze_summary">Inaktivitätsdisplay</string>
     <string name="grayscale">Graustufen-Modus</string>
 
 </resources>

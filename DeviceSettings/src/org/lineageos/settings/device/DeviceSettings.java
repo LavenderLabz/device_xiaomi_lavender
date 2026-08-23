@@ -17,7 +17,6 @@
 package org.lineageos.settings.device;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -69,14 +68,11 @@ public class DeviceSettings extends SettingsBasePreferenceFragment implements
     public static final int MIN_LED = 1;
     public static final int MAX_LED = 255;
 
-    private static final String CATEGORY_DISPLAY = "display";
-    private static final String PREF_DEVICE_DOZE = "device_doze";
 
 
     public static final String PREF_THERMAL = "thermal";
     public static final String THERMAL_PATH = "/sys/devices/virtual/thermal/thermal_message/sconfig";
 
-    private static final String DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
 
     
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
@@ -135,12 +131,6 @@ public class DeviceSettings extends SettingsBasePreferenceFragment implements
            micGain.setOnPreferenceChangeListener(this);
         } else {
           gainCategory.removePreference(findPreference(PREF_MIC_GAIN));
-        }
-        // Display Category
-        PreferenceCategory displayCategory = (PreferenceCategory) findPreference(CATEGORY_DISPLAY);
-        // Doze
-        if (isAppNotInstalled(DEVICE_DOZE_PACKAGE_NAME)) {
-            displayCategory.removePreference(findPreference(PREF_DEVICE_DOZE));
         }
 
         //FPS Info
@@ -265,13 +255,5 @@ public class DeviceSettings extends SettingsBasePreferenceFragment implements
         return true;
     }
 
-    private boolean isAppNotInstalled(String uri) {
-        PackageManager packageManager = getContext().getPackageManager();
-        try {
-            packageManager.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
-            return false;
-        } catch (PackageManager.NameNotFoundException e) {
-            return true;
-        }
     }
 }

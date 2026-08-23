@@ -9,10 +9,6 @@
 
     <string name="display_title">显示</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">环境显示</string>
-    <string name="advanced_doze_summary">环境显示附加设置</string>
-
     <string name="vibration_title">触觉反馈</string>
     <string name="vibration_strength_title">强度</string>
 

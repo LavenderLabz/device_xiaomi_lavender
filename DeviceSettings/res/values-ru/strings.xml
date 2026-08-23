@@ -11,10 +11,6 @@
 
     <string name="display_title">Экран</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">Индикация событий</string>
-    <string name="advanced_doze_summary">Ambient экран</string>
-
     <string name="vibration_title">Вибрация</string>
     <string name="vibration_strength_title">Сила</string>
 

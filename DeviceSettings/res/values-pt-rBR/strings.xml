@@ -23,10 +23,6 @@
     <string name="notification_title">LED de notificação</string>
     <string name="notification_led_title">Brilho do LED de notificação</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">Tela Ambiente</string>
-    <string name="advanced_doze_summary">Configurações específicas de gestos da tela Ambiente</string>
-
     <string name="vibration_title">Retorno de vibração</string>
     <string name="vibration_strength_title">Intensidade</string>
 

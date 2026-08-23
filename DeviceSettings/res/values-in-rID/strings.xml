@@ -23,10 +23,6 @@
     <string name="notification_title">LED Notifikasi</string>
     <string name="notification_led_title">Kecerahan LED</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">Layar siaga</string>
-    <string name="advanced_doze_summary">setelan spesitik perangkat untuk layar siaga</string>
-
     <string name="vibration_title">Umpan balik getaran</string>
     <string name="vibration_strength_title">Kekuatan</string>
 

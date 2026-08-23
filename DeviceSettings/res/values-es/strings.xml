@@ -13,9 +13,6 @@
     <string name="notification_title">Notificación LED</string>
     <string name="notification_led_title">Brillo del LED</string>
 
-     <!-- Ambient Display -->
-    <string name="ambient_display">Doze de xiaomi</string>
-    <string name="advanced_doze_summary">Pantalla ambiente</string>
      
     <!-- Thermal Profiles -->
     <string name="thermal_profile_title">Rendimiento</string>

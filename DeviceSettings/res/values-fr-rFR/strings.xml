@@ -15,10 +15,6 @@
     <string name="notification_title">LED de notifications</string>
     <string name="notification_led_title">Luminosité de la LED</string>
 
-    <!-- Ambient Display -->
-    <string name="ambient_display">Affichage ambiant</string>
-    <string name="advanced_doze_summary">Paramètres d\'affichage ambiant propres à l\'appareil</string>
-
     <string name="vibration_title">Retour haptique</string>
     <string name="vibration_strength_title">Force</string>
 
