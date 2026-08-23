@@ -648,20 +648,9 @@
     
     <integer name="config_lightSensorWarmupTime">200</integer>
 
-    
-    <bool name="config_voice_capable">false</bool>
-
-    
     <integer name="config_audio_notif_vol_steps">25</integer>
 
-    
     <integer name="config_audio_ring_vol_steps">25</integer>
-
-    
-    <bool name="config_sms_capable">false</bool>
-
-    
-    <bool name="config_mobile_data_capable">false</bool>
 
     
     
