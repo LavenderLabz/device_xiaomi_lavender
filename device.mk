@@ -33,7 +33,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 TARGET_USES_RRO := true
 
 PRODUCT_PACKAGES += \
-    LavenderApertureOverlay \
     LavenderCarrierConfigOverlay \
     LavenderDeviceAsWebcam \
     LavenderFrameworksOverlay \
