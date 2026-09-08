@@ -113,8 +113,8 @@
             android:icon="@drawable/ic_speaker_cleaner_icon" >
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="com.xiaomi.parts.speaker.ClearSpeakerActivity"
-                android:targetPackage="com.xiaomi.parts.speaker" />
+                android:targetClass="org.lineageos.settings.device.speaker.ClearSpeakerActivity"
+                android:targetPackage="org.lineageos.settings.device" />
         </Preference>
     </PreferenceCategory>
 
