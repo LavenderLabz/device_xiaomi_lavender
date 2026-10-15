@@ -1490,6 +1490,8 @@ vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|ee
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|7c40ea686640d4a481aacd2426347ef6abb593e7
 vendor/lib64/egl/libq3dtools_esx.so|dec44f37757b530e1be8beea5205134a0cd52c20
 vendor/lib64/libadreno_utils.so|fd2e8e7ef74a136cab7e309827f5aaab402c9b37
+vendor/lib/libC2D2.so|052f9701170bbfd82b6f028ad2524baff5aa1eab
+vendor/lib/libc2d30_bltlib.so|6e086b51de5f0b8fb45b18fdec7b4e7d5182420b
 vendor/lib64/libC2D2.so|71f0be54afc7f8f9c8feeb9debc849706f8fb698
 vendor/lib64/libc2d30_bltlib.so|a9eb5dcac16a17967b7418f7359070e150e519af
 vendor/lib64/libCB.so|576a9290637107979c0915fb596eeaecda0b71f1
